@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="600" viewBox="0 0 400 600">
+  <defs>
+    <linearGradient id="pg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e63946"/>
+      <stop offset="1" stop-color="#a8dadc"/>
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#pg)"/>
+  <g font-family="DejaVu Sans, Arial" fill="#1d3557" text-anchor="middle">
+    <text x="200" y="320" font-size="40" font-weight="bold">Noche Estelar</text>
+    <text x="200" y="360" font-size="18">Póster de ejemplo</text>
+  </g>
+</svg>

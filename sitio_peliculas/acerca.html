@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Sitio web educativo de películas hecho solo con HTML5: estructura semántica, tablas e imágenes.">
+  <meta name="keywords" content="HTML, HTML5, tablas, formularios, películas">
+  <meta name="author" content="Andrés Burgos">
+  <title>Acerca de — CineManía</title>
+  <link rel="icon" type="image/svg+xml" href="imagenes/logo.svg">
+</head>
+<body>
+
+<header>
+  <figure>
+    <img src="imagenes/banner.svg" alt="Banner CineManía" width="100%">
+    <figcaption>Actualizado el <time datetime="2025-08-30">2025-08-30</time>.</figcaption>
+  </figure>
+  <h1>CineManía</h1>
+  <p><mark>Portal demo</mark> para practicar la <abbr title="HyperText Markup Language">HTML</abbr> semántica.</p>
+</header>
+<nav><a href="index.html">Inicio</a> | <a href="peliculas.html">Películas</a> | <a href="directores.html">Directores</a> | <a href="actores.html">Actores</a> | <a href="cartelera.html">Cartelera</a> | <a href="galeria.html">Galería</a> | <a href="encuesta.html">Encuesta</a> | <a href="acerca.html" aria-current="page">Acerca de</a></nav>
+<main>
+
+<article>
+  <h2>Acerca de este sitio</h2>
+  <p>Este proyecto demostrativo fue creado para practicar etiquetas semánticas, tablas, formularios con más de 10 campos,
+  imágenes y navegación entre <strong>8 páginas</strong>, todo usando solo HTML.</p>
+  <section>
+    <h3>Créditos</h3>
+    <ul>
+      <li>Diseño simple con <em>etiquetas puras</em> de HTML5.</li>
+      <li>Imágenes tipo <code>SVG</code> generadas automáticamente.</li>
+    </ul>
+  </section>
+</article>
+
+</main>
+<aside>
+  <h2>Boletín</h2>
+  <p>Suscríbete a nuestro boletín mensual.</p>
+  <form action="#" method="get">
+    <label for="mail">Email:</label>
+    <input type="email" id="mail" name="mail">
+    <button type="submit">Enviar</button>
+  </form>
+</aside>
+<footer>
+  <address>
+    Contacto: <a href="mailto:editor@cinemania.example">editor@cinemania.example</a> — Calle 123, Bogotá, Colombia
+  </address>
+  <p>&copy; <time>2025</time> CineManía. Hecho con etiquetas de HTML5.</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Sitio web educativo de películas hecho solo con HTML5: estructura semántica, tablas e imágenes.">
+  <meta name="keywords" content="HTML, HTML5, tablas, formularios, películas">
+  <meta name="author" content="Andrés Burgos">
+  <title>Inicio — CineManía</title>
+  <link rel="icon" type="image/svg+xml" href="imagenes/logo.svg">
+</head>
+<body>
+
+<header>
+  <figure>
+    <img src="imagenes/banner.svg" alt="Banner CineManía" width="100%">
+    <figcaption>Actualizado el <time datetime="2025-08-30">2025-08-30</time>.</figcaption>
+  </figure>
+  <h1>CineManía</h1>
+  <p><mark>Portal demo</mark> para practicar la <abbr title="HyperText Markup Language">HTML</abbr> semántica.</p>
+</header>
+<nav><a href="index.html" aria-current="page">Inicio</a> | <a href="peliculas.html">Películas</a> | <a href="directores.html">Directores</a> | <a href="actores.html">Actores</a> | <a href="cartelera.html">Cartelera</a> | <a href="galeria.html">Galería</a> | <a href="encuesta.html">Encuesta</a> | <a href="acerca.html">Acerca de</a></nav>
+<main>
+
+<article>
+  <h2>Bienvenido</h2>
+  <p>Este sitio de ejemplo usa <strong>solo HTML</strong> con estructura semántica: <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>,
+  <code>&lt;article&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;aside&gt;</code> y <code>&lt;footer&gt;</code>.</p>
+  <section>
+    <h3>Tabla de géneros</h3>
+    <table border="1">
+      <caption>Géneros y descripción</caption>
+      <thead>
+        <tr><th>Género</th><th>Descripción</th><th>Popularidad (meter)</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Acción</td><td>Ritmo acelerado</td><td><meter min="0" max="10" value="8">8/10</meter></td></tr>
+        <tr><td>Drama</td><td>Enfoque emocional</td><td><meter min="0" max="10" value="7">7/10</meter></td></tr>
+        <tr><td>Ciencia ficción</td><td>Especulación científica</td><td><meter min="0" max="10" value="9">9/10</meter></td></tr>
+      </tbody>
+      <tfoot><tr><td colspan="3">Datos sin fines comerciales</td></tr></tfoot>
+    </table>
+  </section>
+  <section>
+    <h3>Reproductores</h3>
+    <p>A continuación se muestran etiquetas multimedia (no requieren estilos):</p>
+    <details>
+      <summary>Ver ejemplo de &lt;audio&gt; y &lt;video&gt;</summary>
+      <p><em>Coloque aquí sus archivos si los tiene.</em></p>
+      <audio controls src=""></audio>
+      <video controls width="480" src=""></video>
+      <p>Progreso de descarga: <progress max="100" value="40">40%</progress></p>
+    </details>
+  </section>
+</article>
+
+</main>
+<aside>
+  <h2>Boletín</h2>
+  <p>Suscríbete a nuestro boletín mensual.</p>
+  <form action="#" method="get">
+    <label for="mail">Email:</label>
+    <input type="email" id="mail" name="mail">
+    <button type="submit">Enviar</button>
+  </form>
+</aside>
+<footer>
+  <address>
+    Contacto: <a href="mailto:editor@cinemania.example">editor@cinemania.example</a> — Calle 123, Bogotá, Colombia
+  </address>
+  <p>&copy; <time>2025</time> CineManía. Hecho con etiquetas de HTML5.</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Sitio web educativo de películas hecho solo con HTML5: estructura semántica, tablas e imágenes.">
+  <meta name="keywords" content="HTML, HTML5, tablas, formularios, películas">
+  <meta name="author" content="Andrés Burgos">
+  <title>Directores — CineManía</title>
+  <link rel="icon" type="image/svg+xml" href="imagenes/logo.svg">
+</head>
+<body>
+
+<header>
+  <figure>
+    <img src="imagenes/banner.svg" alt="Banner CineManía" width="100%">
+    <figcaption>Actualizado el <time datetime="2025-08-30">2025-08-30</time>.</figcaption>
+  </figure>
+  <h1>CineManía</h1>
+  <p><mark>Portal demo</mark> para practicar la <abbr title="HyperText Markup Language">HTML</abbr> semántica.</p>
+</header>
+<nav><a href="index.html">Inicio</a> | <a href="peliculas.html">Películas</a> | <a href="directores.html" aria-current="page">Directores</a> | <a href="actores.html">Actores</a> | <a href="cartelera.html">Cartelera</a> | <a href="galeria.html">Galería</a> | <a href="encuesta.html">Encuesta</a> | <a href="acerca.html">Acerca de</a></nav>
+<main>
+
+<article>
+  <h2>Directores</h2>
+  <section>
+    <h3>Ficha técnica (tabla)</h3>
+    <table border="1">
+      <thead><tr><th>Nombre</th><th>Nacionalidad</th><th>Obra</th></tr></thead>
+      <tbody>
+        <tr><td>Ana Rivera</td><td>Colombiana</td><td>Horizonte Rojo</td></tr>
+        <tr><td>Marco Silva</td><td>Mexicano</td><td>Ciudad Azul</td></tr>
+        <tr><td>R. Valdés</td><td>Chileno</td><td>Noche Estelar</td></tr>
+      </tbody>
+    </table>
+  </section>
+  <section>
+    <h3>Glosario</h3>
+    <dl>
+      <dt><abbr title="Director of Photography">DOP</abbr></dt><dd>Responsable de la fotografía.</dd>
+      <dt>Storyboard</dt><dd>Secuencia de viñetas que planifica escenas.</dd>
+    </dl>
+  </section>
+</article>
+
+</main>
+<aside>
+  <h2>Boletín</h2>
+  <p>Suscríbete a nuestro boletín mensual.</p>
+  <form action="#" method="get">
+    <label for="mail">Email:</label>
+    <input type="email" id="mail" name="mail">
+    <button type="submit">Enviar</button>
+  </form>
+</aside>
+<footer>
+  <address>
+    Contacto: <a href="mailto:editor@cinemania.example">editor@cinemania.example</a> — Calle 123, Bogotá, Colombia
+  </address>
+  <p>&copy; <time>2025</time> CineManía. Hecho con etiquetas de HTML5.</p>
+</footer>
+</body>
+</html>

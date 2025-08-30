@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Sitio web educativo de películas hecho solo con HTML5: estructura semántica, tablas e imágenes.">
+  <meta name="keywords" content="HTML, HTML5, tablas, formularios, películas">
+  <meta name="author" content="Andrés Burgos">
+  <title>Encuesta — CineManía</title>
+  <link rel="icon" type="image/svg+xml" href="imagenes/logo.svg">
+</head>
+<body>
+
+<header>
+  <figure>
+    <img src="imagenes/banner.svg" alt="Banner CineManía" width="100%">
+    <figcaption>Actualizado el <time datetime="2025-08-30">2025-08-30</time>.</figcaption>
+  </figure>
+  <h1>CineManía</h1>
+  <p><mark>Portal demo</mark> para practicar la <abbr title="HyperText Markup Language">HTML</abbr> semántica.</p>
+</header>
+<nav><a href="index.html">Inicio</a> | <a href="peliculas.html">Películas</a> | <a href="directores.html">Directores</a> | <a href="actores.html">Actores</a> | <a href="cartelera.html">Cartelera</a> | <a href="galeria.html">Galería</a> | <a href="encuesta.html" aria-current="page">Encuesta</a> | <a href="acerca.html">Acerca de</a></nav>
+<main>
+
+<article>
+  <h2>Encuesta de satisfacción</h2>
+  <p>Completa el formulario. Tiene más de diez campos e incluye diversos tipos de entrada.</p>
+  <form action="#" method="post" enctype="multipart/form-data">
+    <fieldset>
+      <legend>Datos personales</legend>
+      <table>
+        <tr><td><label for="nombre">Nombre:</label></td><td><input id="nombre" name="nombre" type="text" required placeholder="Tu nombre"></td></tr>
+        <tr><td><label for="email">Email:</label></td><td><input id="email" name="email" type="email" required></td></tr>
+        <tr><td><label for="tel">Teléfono:</label></td><td><input id="tel" name="tel" type="tel" pattern="[0-9\-\s]+"></td></tr>
+        <tr><td><label for="edad">Edad:</label></td><td><input id="edad" name="edad" type="number" min="1" max="120"></td></tr>
+        <tr><td><label for="web">Página web:</label></td><td><input id="web" name="web" type="url" placeholder="https://"></td></tr>
+        <tr><td><label for="color">Color favorito:</label></td><td><input id="color" name="color" type="color"></td></tr>
+        <tr><td><label for="fecha">Fecha de visita:</label></td><td><input id="fecha" name="fecha" type="date"></td></tr>
+        <tr><td><label for="hora">Hora de visita:</label></td><td><input id="hora" name="hora" type="time"></td></tr>
+        <tr><td><label for="archivo">Sube tu comprobante:</label></td><td><input id="archivo" name="archivo" type="file"></td></tr>
+      </table>
+    </fieldset>
+    <fieldset>
+      <legend>Preferencias de cine</legend>
+      <table>
+        <tr><td><label for="genero">Género preferido:</label></td>
+            <td>
+              <select id="genero" name="genero">
+                <option>Acción</option>
+                <option>Drama</option>
+                <option>Ciencia ficción</option>
+                <option>Comedia</option>
+              </select>
+            </td></tr>
+        <tr><td>Formato:</td>
+            <td>
+              <label><input type="radio" name="formato" value="2D" checked> 2D</label>
+              <label><input type="radio" name="formato" value="3D"> 3D</label>
+              <label><input type="radio" name="formato" value="IMAX"> IMAX</label>
+            </td></tr>
+        <tr><td><label for="butacas">Preferencia de butacas:</label></td>
+            <td>
+              <input list="butacas" name="butaca">
+              <datalist id="butacas">
+                <option value="Central">
+                <option value="Pasillo">
+                <option value="Última fila">
+              </datalist>
+            </td></tr>
+        <tr><td><label for="puntuacion">Puntúa la experiencia:</label></td>
+            <td><input type="range" id="puntuacion" name="puntuacion" min="0" max="10" value="5"></td></tr>
+        <tr><td>Servicios usados:</td>
+            <td>
+              <label><input type="checkbox" name="servicios" value="Dulceria"> Dulcería</label>
+              <label><input type="checkbox" name="servicios" value="Parqueadero"> Parqueadero</label>
+              <label><input type="checkbox" name="servicios" value="VIP"> Sala VIP</label>
+            </td></tr>
+        <tr><td><label for="comentarios">Comentarios:</label></td>
+            <td><textarea id="comentarios" name="comentarios" rows="4" cols="40"></textarea></td></tr>
+      </table>
+    </fieldset>
+    <p>
+      <button type="submit">Enviar</button>
+      <button type="reset">Limpiar</button>
+      <kbd>Ctrl</kbd> + <kbd>Enter</kbd> para enviar (si tu navegador lo soporta).
+    </p>
+  </form>
+</article>
+
+</main>
+<aside>
+  <h2>Boletín</h2>
+  <p>Suscríbete a nuestro boletín mensual.</p>
+  <form action="#" method="get">
+    <label for="mail">Email:</label>
+    <input type="email" id="mail" name="mail">
+    <button type="submit">Enviar</button>
+  </form>
+</aside>
+<footer>
+  <address>
+    Contacto: <a href="mailto:editor@cinemania.example">editor@cinemania.example</a> — Calle 123, Bogotá, Colombia
+  </address>
+  <p>&copy; <time>2025</time> CineManía. Hecho con etiquetas de HTML5.</p>
+</footer>
+</body>
+</html>
