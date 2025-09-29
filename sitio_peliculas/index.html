@@ -1,74 +1,79 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Sitio web educativo de películas hecho solo con HTML5: estructura semántica, tablas e imágenes.">
-  <meta name="keywords" content="HTML, HTML5, tablas, formularios, películas">
-  <meta name="author" content="Andrés Burgos">
-  <title>Inicio — CineManía</title>
-  <link rel="icon" type="image/svg+xml" href="imagenes/logo.svg">
+    <title>CineManía - Tu portal de películas</title>
 </head>
-<body>
+<body bgcolor="black" text="white">
 
-<header>
-  <figure>
-    <img src="imagenes/banner.svg" alt="Banner CineManía" width="100%">
-    <figcaption>Actualizado el <time datetime="2025-08-30">2025-08-30</time>.</figcaption>
-  </figure>
-  <h1>CineManía</h1>
-  <p><mark>Portal demo</mark> para practicar la <abbr title="HyperText Markup Language">HTML</abbr> semántica.</p>
-</header>
-<nav><a href="index.html" aria-current="page">Inicio</a> | <a href="peliculas.html">Películas</a> | <a href="directores.html">Directores</a> | <a href="actores.html">Actores</a> | <a href="cartelera.html">Cartelera</a> | <a href="galeria.html">Galería</a> | <a href="encuesta.html">Encuesta</a> | <a href="acerca.html">Acerca de</a></nav>
-<main>
-
-<article>
-  <h2>Bienvenido</h2>
-  <p>Este sitio de ejemplo usa <strong>solo HTML</strong> con estructura semántica: <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>,
-  <code>&lt;article&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;aside&gt;</code> y <code>&lt;footer&gt;</code>.</p>
-  <section>
-    <h3>Tabla de géneros</h3>
-    <table border="1">
-      <caption>Géneros y descripción</caption>
-      <thead>
-        <tr><th>Género</th><th>Descripción</th><th>Popularidad (meter)</th></tr>
-      </thead>
-      <tbody>
-        <tr><td>Acción</td><td>Ritmo acelerado</td><td><meter min="0" max="10" value="8">8/10</meter></td></tr>
-        <tr><td>Drama</td><td>Enfoque emocional</td><td><meter min="0" max="10" value="7">7/10</meter></td></tr>
-        <tr><td>Ciencia ficción</td><td>Especulación científica</td><td><meter min="0" max="10" value="9">9/10</meter></td></tr>
-      </tbody>
-      <tfoot><tr><td colspan="3">Datos sin fines comerciales</td></tr></tfoot>
+    <!-- Banner -->
+    <table border="0" width="100%" bgcolor="red">
+        <tr>
+            
+            <td align="center"><h1>🎬 CineManía 🎬</h1></td>
+           
+        </tr>
     </table>
-  </section>
-  <section>
-    <h3>Reproductores</h3>
-    <p>A continuación se muestran etiquetas multimedia (no requieren estilos):</p>
-    <details>
-      <summary>Ver ejemplo de &lt;audio&gt; y &lt;video&gt;</summary>
-      <p><em>Coloque aquí sus archivos si los tiene.</em></p>
-      <audio controls src=""></audio>
-      <video controls width="480" src=""></video>
-      <p>Progreso de descarga: <progress max="100" value="40">40%</progress></p>
-    </details>
-  </section>
-</article>
 
-</main>
-<aside>
-  <h2>Boletín</h2>
-  <p>Suscríbete a nuestro boletín mensual.</p>
-  <form action="#" method="get">
-    <label for="mail">Email:</label>
-    <input type="email" id="mail" name="mail">
-    <button type="submit">Enviar</button>
-  </form>
-</aside>
-<footer>
-  <address>
-    Contacto: <a href="mailto:editor@cinemania.example">editor@cinemania.example</a> — Calle 123, Bogotá, Colombia
-  </address>
-  <p>&copy; <time>2025</time> CineManía. Hecho con etiquetas de HTML5.</p>
-</footer>
+    <!-- Menú de navegación -->
+    <table border="1" width="100%" bgcolor="gray">
+        <tr align="center">
+            <td><a href="index.html">Inicio</a></td>
+            <td><a href="cartelera.html">Cartelera</a></td>
+            <td><a href="estrenos.html">Próximos Estrenos</a></td>
+            <td><a href="clasicos.html">Clásicos</a></td>
+            <td><a href="contacto.html">Contáctanos</a></td>
+            <td><a href="registro.html">Registro</a></td>
+            <td><a href="login.html">Iniciar Sesión</a></td>
+            <td><a href="encuesta.html">Encuesta</a></td>
+        </tr>
+    </table>
+
+    <!-- Bienvenida -->
+    <h2 align="center">🎥 Bienvenido a CineManía 🎥</h2>
+    <p align="justify">
+        En <b>CineManía</b> encontrarás toda la información sobre el mundo del cine: 
+        desde la cartelera actual hasta los próximos estrenos que llegarán a la pantalla grande.  
+        Nuestro portal está diseñado para que vivas la experiencia del cine desde casa, 
+        con reseñas, sinopsis, tráilers e información de tus actores favoritos.  
+    </p>
+
+    <p align="justify">
+        Además, podrás <u>registrarte</u> para recibir notificaciones de tus películas favoritas, 
+        participar en encuestas y enterarte antes que nadie de los próximos lanzamientos.  
+    </p>
+
+    <!-- Ejemplo de contenido destacado -->
+    <h3>🎬 Películas más vistas esta semana</h3>
+    <table border="1" width="80%" align="center">
+        <tr bgcolor="darkred">
+            <th>Título</th>
+            <th>Género</th>
+            <th>Año</th>
+            <th>Imagen</th>
+        </tr>
+        <tr>
+            <td>Oppenheimer</td>
+            <td>Drama / Historia</td>
+            <td>2023</td>
+            <td><img src="imagenes/oppenheimer.jpg" alt="Oppenheimer" width="120"></td>
+        </tr>
+        <tr>
+            <td>Avatar: El Camino del Agua</td>
+            <td>Ciencia Ficción</td>
+            <td>2022</td>
+            <td><img src="imagenes/avatar2.jpg" alt="Avatar 2" width="120"></td>
+        </tr>
+        <tr>
+            <td>Spider-Man: Across the Spider-Verse</td>
+            <td>Animación / Acción</td>
+            <td>2023</td>
+            <td><img src="imagenes/spiderman.jpg" alt="Spider-Verse" width="120"></td>
+        </tr>
+    </table>
+
+    <br><br>
+    <hr>
+    <p align="center">&copy; 2025 CineManía | Todos los derechos reservados</p>
 </body>
 </html>
+
